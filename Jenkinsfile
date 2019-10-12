@@ -5,6 +5,6 @@ node('master'){
    stage('angular build'){
              sh 'npm build'
              sh 'npm install'
-             sh 'ng build'
+             sh 'npm run ng -- build'
          }
 }
