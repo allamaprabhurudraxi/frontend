@@ -1,5 +1,4 @@
-node{
-   agent { node { label 'master' } } 
+node('master'){
    stage('git checkout'){
                   git 'https://github.com/ajitesh17/UI_NEW'
               }
