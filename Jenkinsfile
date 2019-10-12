@@ -1,5 +1,5 @@
 node{
-    agent any
+   agent { node { label 'master' } } 
    stage('git checkout'){
                   git 'https://github.com/ajitesh17/UI_NEW'
               }
